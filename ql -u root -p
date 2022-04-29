@@ -1,0 +1,13 @@
+[0;1;32m●[0m mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Thu 2022-04-28 23:30:39 PKT; 7min ago
+    Process: 12443 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre (code=exited, status=0/SUCCESS)
+   Main PID: 12451 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 7479)
+     Memory: 390.6M
+     CGroup: /system.slice/mysql.service
+             └─12451 /usr/sbin/mysqld
+
+Apr 28 23:30:38 DESKTO systemd[1]: Starting MySQL Community Server...
+Apr 28 23:30:39 DESKTO systemd[1]: Started MySQL Community Server.
