@@ -1,6 +1,7 @@
 <x-layout>
     <section class="px-6 py-8">
-        <main class="max-w-lg mx-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
+        <main class="max-w-lg mx-auto mt-10 ">
+            <x-panel>
             <h1 class="text-center font-bold text-xl">Log In</h1>
 
             <form method="POST" action="/login" class="mt-10">
@@ -10,7 +11,7 @@
                             Email
                     </label>
 
-                    <input class="border border-gray-400 p-2 w-full" type="email" name="email" id="email"  value="{{ old('email')}}" required>
+                    <input class="border border-gray-200 rounded p-2 w-full" type="email" name="email" id="email"  value="{{ old('email')}}" autocomplete="username" required>
                     @error('email')
                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                 @enderror
@@ -21,7 +22,7 @@
                             Password
                     </label>
 
-                    <input class="border border-gray-400 p-2 w-full" type="password" name="password" id="password" required>
+                    <input class="border border-gray-200 rounded p-2 w-full" type="password" name="password" id="password" autocomplete="new-password" required>
                     @error('password')
                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                 @enderror
@@ -31,6 +32,7 @@
                     <button type="submit" class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">Submit</button>
                 </div>
             </form>
+            </x-panel>
         </main>
     </section>
 </x-layout>
