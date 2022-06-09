@@ -10,8 +10,8 @@
                             </header>
 
                             <div class="mt-6">
-                                <textarea name="body" 
-                                class="w-full text-sm focus:outline-none focus:ring" 
+                                <textarea name="body"
+                                class="w-full text-sm focus:outline-none focus:ring"
                                 placeholder="Quick, thing of something to say" rows="5" required></textarea>
 
                                 @error('body')
